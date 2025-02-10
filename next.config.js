@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+/** @type {{optimizeFonts: boolean, fontLoaders: [{loader: string, options: {weight: string[], subsets: string[]}}], images: {domains: string[]}, experimental: {appDir: boolean}}} */
 const nextConfig = {
   experimental: {
     appDir: true,
