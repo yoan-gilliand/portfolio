@@ -17,7 +17,7 @@ export const devProjects = [
     technologies: ["Electron.js", "Vue.js", "Vuetify"],
     github: "",
     demo: "https://www.linkedin.com/in/yoan-gilliand/#:~:text=Projets-,Match%20Race%20%E2%80%93%20A%20Digitalized%20Photo%20Competition%20Platform,-Match%20Race%20%E2%80%93%20A",
-    image: require(".//../../public/projects/matchrace.png"),
+    image: require("../../public/projects/matchrace.jpeg"),
     available: true,
   },
   {
@@ -27,7 +27,7 @@ export const devProjects = [
     technologies: ["Vue.js", "Express.js", "MySQL"],
     github: "",
     demo: "https://www.linkedin.com/in/yoan-gilliand/#:~:text=Autres%20contributeurs-,eParking%20%E2%80%93%20A%20Smart%20Parking%20Permit%20Management%20Platform,-eParking%20%E2%80%93%20A%20Smart",
-    image: require(".//../../public/projects/matchrace.png"),
+    image: require("../../public/projects/eparking.jpg"),
     available: true,
   },
 ];
