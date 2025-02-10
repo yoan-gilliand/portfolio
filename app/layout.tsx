@@ -35,7 +35,6 @@ export const metadata: Metadata = {
     "frontend developer portfolio",
     "creative developer portfolio",
   ],
-  colorScheme: "dark",
   openGraph: {
     title: "Yoan Gilliand — Software Engineering Student",
     description:
@@ -78,6 +77,10 @@ export const metadata: Metadata = {
     },
   },
   category: "technology",
+};
+
+export const viewport = {
+  colorScheme: "dark",
 };
 
 type RootLayoutProps = {
