@@ -11,20 +11,20 @@ const Footer = () => {
       initial="initial"
       animate="animate"
     >
-      <motion.div className="mx-auto flex w-[90%] flex-row items-center justify-between text-center text-[12px] text-[#e4ded7] sm:text-[12px] md:text-[14px] lg:max-w-[1440px] lg:text-[14px]">
-        <AnimatedBody text={`Copyright ${year}`} className={"m-0 p-0"} />
+      <motion.div className="mx-auto flex w-[90%] flex-col items-center text-center text-[12px] text-[#e4ded7] sm:flex-row sm:justify-between sm:text-[12px] md:text-[14px] lg:max-w-[1440px] lg:text-[14px]">
+        <AnimatedBody text={`Copyright ${year}`} className={"m-0 p-0"}/>
         <div className="flex flex-col sm:flex-row  sm:gap-1 md:gap-2">
           <AnimatedBody
-            text={"Design & Development by"}
+              text={"Design & Development by"}
             className={"m-0 p-0"}
           />
           <Link
-            href="https://github.com/victorcodess"
+            href="https://github.com/yoan-gilliand"
             target="_blank"
-            aria-label="Victor's GitHub Profile"
+            aria-label="Yoan's GitHub Profile"
           >
             <span className="underline underline-offset-2 hover:no-underline">
-              <AnimatedBody text={"Victor Williams"} className={"m-0 p-0"} />
+              <AnimatedBody text={"Yoan Gilliand"} className={"m-0 p-0"} />
             </span>{" "}
           </Link>
         </div>
