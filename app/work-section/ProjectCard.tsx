@@ -7,6 +7,8 @@ import Image from "next/image";
 import AnimatedTitle from "../animations/AnimatedTitle";
 import AnimatedBody from "../animations/AnimatedBody";
 import { motion } from "framer-motion";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+
 
 const ProjectCard = ({
                        id,
@@ -54,7 +56,7 @@ const ProjectCard = ({
                     aria-label="Open GitHub Repository"
                 >
                   <FontAwesomeIcon
-                      icon={faGithub}
+                      icon={faGithub as IconProp}
                       className=" w-[20px] rounded-full bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
                       data-blobity
                       data-blobity-radius="38"
@@ -65,7 +67,7 @@ const ProjectCard = ({
                 </Link>
                 <Link href={demo} target="_blank" aria-label="Open Live Demo">
                   <FontAwesomeIcon
-                      icon={faLink}
+                      icon={faLink as IconProp}
                       className=" w-[20px] rounded-full bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
                       data-blobity
                       data-blobity-radius="38"
@@ -84,7 +86,7 @@ const ProjectCard = ({
                     aria-label="Open GitHub Repository"
                 >
                   <FontAwesomeIcon
-                      icon={faGithub}
+                      icon={faGithub as IconProp}
                       className=" w-[20px]  rounded-full bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
                       data-blobity
                       data-blobity-radius="38"

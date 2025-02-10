@@ -7,6 +7,7 @@ import AnimatedWords from "../animations/AnimatedWords";
 import profile from "../../public/profile.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 const Hero = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -56,7 +57,7 @@ const Hero = () => {
                 aria-label="View GitHub Profile"
                 className="flex items-center"
             >
-              <FontAwesomeIcon icon={faGithub} className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 lg:h-10 lg:w-10 text-[#e4ded7]"/>
+              <FontAwesomeIcon icon={faGithub as IconProp} className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 lg:h-10 lg:w-10 text-[#e4ded7]"/>
             </Link>
             <Link
                 href="https://www.linkedin.com/in/yoan-gilliand/"
@@ -64,7 +65,7 @@ const Hero = () => {
                 aria-label="View LinkedIn Profile"
                 className="flex items-center"
             >
-              <FontAwesomeIcon icon={faLinkedin} className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 lg:h-10 lg:w-10 text-[#e4ded7]"/>
+              <FontAwesomeIcon icon={faLinkedin as IconProp} className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 lg:h-10 lg:w-10 text-[#e4ded7]"/>
             </Link>
           </div>
         </div>
