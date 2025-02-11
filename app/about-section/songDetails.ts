@@ -9,7 +9,7 @@ export const songs = [
   {
     title: "I Only Smoke When I Drink",
     artist: "Nimino",
-    image: require(".//../../public/songs/onlysmokewhenidrink.jpg"),
+    image: require(".//../../public/songs/ionlysmokewhenidrink.jpg"),
     link: "https://open.spotify.com/track/39glDGcpBhLVMSsQhvtqHR",
   },
   {
@@ -27,7 +27,7 @@ export const songs = [
   {
     title: "Life and Death",
     artist: "Antrix",
-    image: require(".//../../public/songs/lifeanddeath.jpeg"),
+    image: require(".//../../public/songs/lifeanddeath.jpg"),
     link: "https://open.spotify.com/track/4UYtgQK6Cs3gcEgJRa4O2x",
   },
   {
@@ -51,7 +51,7 @@ export const songs = [
   {
     title: "Soon Again",
     artist: "KBA",
-    image: require(".//../../public/songs/soonagain.jpeg"),
+    image: require(".//../../public/songs/soonagain.jpg"),
     link: "https://open.spotify.com/track/7GtfnyNYA3pTvJOKSNyCee",
   },
   {
