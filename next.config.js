@@ -1,11 +1,11 @@
-/** @type {import('next').NextConfig} */
+/** @type {{optimizeFonts: boolean, fontLoaders: [{loader: string, options: {weight: string[], subsets: string[]}}], images: {domains: string[]}, experimental: {appDir: boolean}}} */
 const nextConfig = {
   experimental: {
     appDir: true,
   },
   optimizeFonts: false,
   images: {
-    domains: ["user-images.githubusercontent.com", "cdn.hashnode.com", "github.com"],
+    domains: ["user-images.githubusercontent.com", "cdn.hashnode.com", "github.com", "citygem.app", "static-00.iconduck.com", "media2.dev.to", "repository-images.githubusercontent.com","avatars.githubusercontent.com"],
   },
   fontLoaders: [
     {
