@@ -5,7 +5,7 @@ const nextConfig = {
   },
   optimizeFonts: false,
   images: {
-    domains: ["user-images.githubusercontent.com", "cdn.hashnode.com", "github.com", "citygem.app"],
+    domains: ["user-images.githubusercontent.com", "cdn.hashnode.com", "github.com", "citygem.app", "static-00.iconduck.com"],
   },
   fontLoaders: [
     {
