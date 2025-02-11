@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import BlogCard from "./BlogCard";
-import { blogDetails } from "./blogDetails";
 import AnimatedWords2 from "../animations/AnimatedWords2";
 import { monaSans } from "../fonts/monaSans";
 import AnimatedBody from "../animations/AnimatedBody";
@@ -16,7 +15,6 @@ interface BlogPost {
 }
 
 const Blog = () => {
-
     const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
