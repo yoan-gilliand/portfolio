@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 const NavBar = () => {
@@ -7,14 +7,15 @@ const NavBar = () => {
     const navRef = useRef(null);
 
     useEffect(() => {
-        let timeout;
+        let timeout: ReturnType<typeof setTimeout>;
         const handleScroll = () => {
             setIsVisible(true);
             clearTimeout(timeout);
             timeout = setTimeout(() => setIsVisible(false), 3000); // Cache après 3 secondes d'inactivité
         };
 
-        const handleClickOutside = (event) => {
+        const handleClickOutside = (event : MouseEvent) => {
+            // @ts-ignore
             if (navRef.current && !navRef.current.contains(event.target)) {
                 setIsVisible(false);
             }
@@ -33,7 +34,7 @@ const NavBar = () => {
         };
     }, []);
 
-    const handleLinkClick = (e) => {
+    const handleLinkClick = (e : React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
         const href = e.currentTarget.href;
         const targetId = href.replace(/.*#/, "");
