@@ -1,37 +1,30 @@
-# Personal Portfolio Website — v1
+# Yoan Gilliand's Portfolio
 
-My name is Victor Williams, and I’m a front-end engineer and web designer based in Lagos, Nigeria. My passion lies in creating software that solves real-world problems and positively impacts people’s lives.
+My name is Yoan Gilliand, and I’m a software engineering student based in Switzerland. I’m passionate about building intuitive web applications and developing solutions that streamline processes and enhance user experiences.
 
-I created this website to showcase my work. I’m always striving to create something unique and innovative. I love experimenting with new technologies and staying up-to-date with the latest trends in the tech world.
+I created this space to showcase my projects and share my journey in tech. I’m always eager to learn, experiment with new technologies, and stay ahead of industry trends. Let’s build something great together! 🚀
 
 ## Tech Stack
 
-**Client:** React, Next.js, TypeScript, TailwindCSS, Framer Motion, GSAP.
+**Client:** <br>
+![Framer Motion](https://img.shields.io/badge/framer%20motion-%23000000.svg?style=for-the-badge&logo=framer&logoColor=white)  ![GSAP](https://img.shields.io/badge/gsap-%2388CE02.svg?style=for-the-badge&logo=greensock&logoColor=white) ![Next.js](https://img.shields.io/badge/next.js-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/react-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=white)  ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)  ![TypeScript](https://img.shields.io/badge/typescript-%233178C6.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-**Hosting:** Vercel.
 
-## Screenshots & Demo
-
-![App Screenshot](https://user-images.githubusercontent.com/84178696/228679118-47e63775-0635-42b2-8838-a80644ef612b.png)
-
-![App Screenshot](https://user-images.githubusercontent.com/84178696/228673498-ad33b834-58b3-43e5-b184-b136d01c6e1a.png)
-
-![App Screenshot](https://user-images.githubusercontent.com/84178696/228675919-70180c2c-c888-423d-ae85-409ce4645b8b.png)
-
-[View Live Demo](https://folio-v1-victorcodess.vercel.app/)
+**Hosting:** <br>
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/victorcodess/folio-v1
+  git clone https://github.com/yoan-gilliand/portfolio.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd folio-v1
+  cd portfolio
 ```
 
 Install dependencies
@@ -46,18 +39,21 @@ Start the server
   npm run dev
 ```
 
+## Hosting on Vercel
+
+This project is hosted on Vercel. Vercel is an amazing platform that allows you to host your projects with ease. You can deploy your own version of this site by clicking the button below.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project)
+
 ## Contributing & Usage
 
 This project is open source, and you are welcome to use the code or parts of the code for your own site. I encourage you to modify the theme and components to make it your own. However, please do not present any of the projects featured on this site as your own. The content of this portfolio is personal and represents real projects I’ve worked on.
 
-If you are using the site’s design largely unmodified, please credit me as the designer of the website.
+## Credits
 
-Incase you have any questions or concerns, please feel free to reach out to me on [Twitter.](https://twitter.com/victorwill__) I am always happy to help!
+Thank you to the following people and resources for the inspiration and code snippets:
 
-
-## Feedback
-
-While I would not be accepting contributions or pull requests at this time, I appreciate your feedback on this project. If you have any suggestions or questions, please don’t hesitate to reach out to me on [Twitter.](https://twitter.com/victorwill__) Your feedback is valuable and will help me improve.
+- [Victor Williams](https://github.com/victorcodess)
 
 ## License
 

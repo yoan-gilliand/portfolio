@@ -1,82 +1,66 @@
 "use client";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavBar = () => {
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    // first prevent the default behavior
-    e.preventDefault();
-    // get the href and remove everything before the hash (#)
-    const href = e.currentTarget.href;
-    const targetId = href.replace(/.*\#/, "");
-    // get the element by id and use scrollIntoView
-    const elem = document.getElementById(targetId);
-    elem?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
+    const [isVisible, setIsVisible] = useState(true);
+    const navRef = useRef(null);
 
-  return (
-    <nav className="fixed bottom-10 left-0 right-0 z-50 my-0  mx-auto  flex w-[306px] items-center justify-center gap-1 rounded-lg bg-[#07070a]/90 px-1 py-1 text-[#e4ded7] backdrop-blur-md sm:w-[383.3px] md:p-2 lg:w-[391.3px]">
-      <Link
-        href="https://drive.google.com/file/d/1Mmwl-FRGPm5QVe3AjtukJr_Jpc366Ear/view"
-        target="_blank"
-        className="flex"
-        aria-label="Open my resume"
-        data-blobity-tooltip="View Resume"
-        data-blobity-magnetic="false"
-      >
-        <FontAwesomeIcon
-          icon={faFilePdf}
-          className="py-2 px-2 text-[16px] sm:px-4 md:py-1"
-        />
-      </Link>
+    useEffect(() => {
+        let timeout: ReturnType<typeof setTimeout>;
+        const handleScroll = () => {
+            setIsVisible(true);
+            clearTimeout(timeout);
+            timeout = setTimeout(() => setIsVisible(false), 3000); // Cache après 3 secondes d'inactivité
+        };
 
-      <Link
-        href="#home"
-        data-blobity-magnetic="false"
-        onClick={handleScroll}
-        aria-label="Scroll to Home Section"
-      >
-        <h4 className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[14px] md:py-1 md:px-4">
-          Home
-        </h4>
-      </Link>
-      <Link
-        href="#work"
-        data-blobity-magnetic="false"
-        onClick={handleScroll}
-        aria-label="Scroll to Work Section"
-      >
-        <h4 className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[14px] md:py-1 md:px-4">
-          Work
-        </h4>
-      </Link>
+        const handleClickOutside = (event : MouseEvent) => {
+            // @ts-ignore
+            if (navRef.current && !navRef.current.contains(event.target)) {
+                setIsVisible(false);
+            }
+        };
 
-      <Link
-        href="#about"
-        data-blobity-magnetic="false"
-        onClick={handleScroll}
-        aria-label="Scroll to About Section"
-      >
-        <h4 className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[14px] md:py-1 md:px-4">
-          About
-        </h4>
-      </Link>
+        if (window.innerWidth <= 1023) {
+            setIsVisible(false);
+            window.addEventListener("scroll", handleScroll);
+            document.addEventListener("click", handleClickOutside);
+        }
 
-      <Link
-        href="#contact"
-        data-blobity-magnetic="false"
-        onClick={handleScroll}
-        aria-label="Scroll to Contact Section"
-      >
-        <h4 className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[14px] md:py-1 md:px-4">
-          Contact
-        </h4>
-      </Link>
-    </nav>
-  );
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            document.removeEventListener("click", handleClickOutside);
+            clearTimeout(timeout);
+        };
+    }, []);
+
+    const handleLinkClick = (e : React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        const href = e.currentTarget.href;
+        const targetId = href.replace(/.*#/, "");
+        const elem = document.getElementById(targetId);
+        elem?.scrollIntoView({ behavior: "smooth" });
+    };
+
+    return (
+        <nav
+            ref={navRef}
+            className={`fixed bottom-10 left-0 right-0 z-50 mx-auto flex w-[306px] items-center justify-center gap-1 rounded-lg bg-[#07070a]/90 px-1 py-1 text-[#e4ded7] backdrop-blur-md sm:w-[383.3px] md:p-2 lg:w-[391.3px] transition-opacity duration-300 ${isVisible ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+        >
+            <Link href="#home" onClick={handleLinkClick} aria-label="Scroll to Home Section">
+                <h4 className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[14px] md:py-1 md:px-4">Home</h4>
+            </Link>
+            <Link href="#work" onClick={handleLinkClick} aria-label="Scroll to Work Section">
+                <h4 className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[14px] md:py-1 md:px-4">Work</h4>
+            </Link>
+            <Link href="#about" onClick={handleLinkClick} aria-label="Scroll to About Section">
+                <h4 className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[14px] md:py-1 md:px-4">About</h4>
+            </Link>
+            <Link href="#contact" onClick={handleLinkClick} aria-label="Scroll to Contact Section">
+                <h4 className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[14px] md:py-1 md:px-4">Contact</h4>
+            </Link>
+        </nav>
+    );
 };
 
 export default NavBar;

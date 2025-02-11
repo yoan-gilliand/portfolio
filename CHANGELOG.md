@@ -1,0 +1,25 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.0]
+
+### Changed
+
+- Preloader animation words
+- Hero section links, name, image and description
+- Projects section details
+- Projects section display on mobile and tablet
+- About section text and skills
+- Songs section details
+- Blogs section details (introduced a placeholder for future blogs)
+- Contact section details
+- Footer details
+
+### Removed
+
+- Testimonials section from the homepage
+- PDF Curriculum Vitae from the navbar
