@@ -1,10 +1,18 @@
-import { blogProps } from "./blogDetails";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import "../globals.css";
+
+interface blogProps {
+    title: string;
+    image: string;
+    date: string;
+    url: string;
+    available: boolean;
+    index: number;
+};
 
 const BlogCard = ({ title, image, url, date, available, index }: blogProps) => {
   return (
