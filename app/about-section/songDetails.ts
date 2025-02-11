@@ -55,6 +55,18 @@ export const songs = [
     link: "https://open.spotify.com/track/7GtfnyNYA3pTvJOKSNyCee",
   },
   {
+    title: "Laserbeam",
+    artist: "Kaos",
+    image: require(".//../../public/songs/laserbeam.jpg"),
+    link: "https://open.spotify.com/track/6vJncAtyCTwRsZPpDweJNn",
+  },
+  {
+    title: "Purpose",
+    artist: "808Banon",
+    image: require(".//../../public/songs/purpose.jpg"),
+    link: "https://open.spotify.com/track/5AjhqiLXwOeHlVS8DzBPj7",
+  },
+  {
     title: "Spiral",
     artist: "KBA",
     image: require(".//../../public/songs/spiral.jpg"),
