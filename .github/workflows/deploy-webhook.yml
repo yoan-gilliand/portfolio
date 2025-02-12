@@ -1,0 +1,83 @@
+name: Vercel Deploy Notification
+
+on:
+  deployment_status:
+    types: [created, success, failure, pending, error]
+
+permissions:
+  deployments: read
+  contents: read
+
+jobs:
+  notify-discord:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send Discord Notification
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          # Définir la couleur et le message en fonction du statut du déploiement
+          if [ "${{ github.event.deployment_status.state }}" == "success" ]; then
+            COLOR=5763719 # Vert
+            STATUS="✅ Déploiement réussi"
+            EMOJI="🎉"
+          elif [ "${{ github.event.deployment_status.state }}" == "failure" ]; then
+            COLOR=15548997 # Rouge
+            STATUS="❌ Déploiement en échec"
+            EMOJI="😞"
+          elif [ "${{ github.event.deployment_status.state }}" == "pending" ]; then
+            COLOR=16776960 # Jaune
+            STATUS="⏳ Déploiement en attente"
+            EMOJI="⏳"
+          else
+            COLOR=10070709 # Gris
+            STATUS="❓ Statut inconnu"
+            EMOJI="❓"
+          fi
+
+          # Récupérer les informations utiles
+          REPO_NAME="${{ github.repository }}"
+          COMMIT_SHA="${{ github.sha }}"
+          SHORT_COMMIT_SHA=$(echo "$COMMIT_SHA" | cut -c1-7)
+          ENVIRONMENT="${{ github.event.deployment.environment }}"
+          DEPLOYMENT_URL="${{ github.event.deployment_status.target_url }}"
+          DESCRIPTION="${{ github.event.deployment_status.description || 'Aucune description fournie' }}"
+          TIMESTAMP="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+
+          # Créer le payload Discord
+          PAYLOAD=$(cat <<EOF
+          {
+            "content": "**Nouveau statut de déploiement** $EMOJI",
+            "embeds": [{
+              "title": "$STATUS",
+              "description": "**Environnement**: $ENVIRONMENT\n**Description**: $DESCRIPTION",
+              "color": $COLOR,
+              "fields": [
+                {
+                  "name": "Repository",
+                  "value": "[$REPO_NAME](https://github.com/$REPO_NAME)",
+                  "inline": true
+                },
+                {
+                  "name": "Commit",
+                  "value": "[\`$SHORT_COMMIT_SHA\`](https://github.com/$REPO_NAME/commit/$COMMIT_SHA)",
+                  "inline": true
+                },
+                {
+                  "name": "Lien du déploiement",
+                  "value": "[Voir le déploiement]($DEPLOYMENT_URL)",
+                  "inline": false
+                }
+              ],
+              "footer": {
+                "text": "Déclenché par ${{ github.event.sender.login }}"
+              },
+              "timestamp": "$TIMESTAMP"
+            }]
+          }
+          EOF
+          )
+
+          # Envoyer la notification via le webhook Discord
+          curl -X POST -H "Content-Type: application/json" -d "$PAYLOAD" $DISCORD_WEBHOOK_URL
