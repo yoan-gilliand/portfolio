@@ -35,7 +35,7 @@ const ProjectCard = ({
             animate="animate"
         >
             {/* Desktop Layout */}
-            <div className="hidden projectscustom:block">
+            <div className="hidden w1200:block">
                 <Image
                     src={image}
                     alt={name}
@@ -142,7 +142,7 @@ const ProjectCard = ({
             </div>
 
             {/* Mobile and Tablet Layout */}
-            <div className="block projectscustom:hidden">
+            <div className="block w1200:hidden">
                 <div className="flex flex-col items-center justify-center p-4 text-center">
                     {/* Icons */}
                     <div className="flex items-center justify-center gap-4 text-[#0E1016]">
