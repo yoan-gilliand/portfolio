@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        "w1200": "1200px",
         "3xl": "1600px",
       },
     },

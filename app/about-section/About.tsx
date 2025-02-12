@@ -59,7 +59,7 @@ const About = () => {
                                 wordSpace={"mr-[0.25em]"}
                                 charSpace={"mr-[0.01em]"}
                             />
-                            <div className="flex justify-center lg:justify-start gap-8">
+                            <div className="flex flex-wrap justify-center lg:justify-start gap-8">
                                 <FontAwesomeIcon icon={faHtml5 as IconProp} size="2x" color="#e4ded7" />
                                 <FontAwesomeIcon icon={faCss3Alt as IconProp} size="2x" color="#e4ded7" />
                                 <FontAwesomeIcon icon={faJs as IconProp} size="2x" color="#e4ded7" />
@@ -77,7 +77,7 @@ const About = () => {
                                 wordSpace={"mr-[0.25em]"}
                                 charSpace={"mr-[0.01em]"}
                             />
-                            <div className="flex justify-center lg:justify-start gap-8">
+                            <div className="flex flex-wrap justify-center lg:justify-start gap-8">
                                 <FontAwesomeIcon icon={faNodeJs as IconProp} size="2x" color="#e4ded7" />
                                 <FontAwesomeIcon icon={faVuejs as IconProp} size="2x" color="#e4ded7" />
                             </div>
@@ -91,7 +91,7 @@ const About = () => {
                                 wordSpace={"mr-[0.25em]"}
                                 charSpace={"mr-[0.01em]"}
                             />
-                            <div className="flex justify-center lg:justify-start gap-8">
+                            <div className="flex flex-wrap justify-center lg:justify-start gap-8">
                                 <FontAwesomeIcon icon={faDocker as IconProp} size="2x" color="#e4ded7" />
                                 <FontAwesomeIcon icon={faGit as IconProp} size="2x" color="#e4ded7" />
                                 <FontAwesomeIcon icon={faGithub as IconProp} size="2x" color="#e4ded7" />

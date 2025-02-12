@@ -30,17 +30,17 @@ const ProjectCard = ({
                     position: "relative",
                 } as React.CSSProperties
             }
-            className={`relative z-10 w-full items-stretch justify-center overflow-hidden rounded-3xl bg-center py-0 lg:h-[500px]`}
+            className={`relative z-10 w-full items-stretch justify-center overflow-hidden rounded-3xl bg-center py-0 lg:min-h-[500px]`}
             initial="initial"
             animate="animate"
         >
             {/* Desktop Layout */}
-            <div className="hidden lg:block">
+            <div className="hidden w1200:block">
                 <Image
                     src={image}
                     alt={name}
-                    className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
-                        id % 2 === 0 ? "right-0" : "left-0"
+                    className={`absolute -bottom-4 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
+                        id % 2 === 0 ? "-right-3" : "-left-3"
                     }`}
                 />
                 <div
@@ -142,7 +142,7 @@ const ProjectCard = ({
             </div>
 
             {/* Mobile and Tablet Layout */}
-            <div className="block lg:hidden">
+            <div className="block w1200:hidden">
                 <div className="flex flex-col items-center justify-center p-4 text-center">
                     {/* Icons */}
                     <div className="flex items-center justify-center gap-4 text-[#0E1016]">

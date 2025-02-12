@@ -7,11 +7,14 @@ import AnimatedTitle from "../animations/AnimatedTitle";
 import AnimatedWords2 from "../animations/AnimatedWords2";
 import { motion } from "framer-motion";
 import heartIcon from "../../public/heart icon.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 const Contact = () => {
   return (
     <motion.section
-      className="relative z-10 flex h-[95vh] w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center py-16 md:h-[80vh] md:py-20 lg:h-[90vh] lg:pt-0 lg:pb-28 3xl:h-[75vh]"
+      className="relative z-10 flex h-[85vh] w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center py-16 md:h-[75vh] md:py-20 lg:h-[75vh] lg:pt-0 lg:pb-28 3xl:h-[60vh]"
       id="contact"
       initial="initial"
       animate="animate"
@@ -63,7 +66,12 @@ const Contact = () => {
                 href="https://github.com/yoan-gilliand"
                 target="_blank"
                 aria-label="View GitHub Profile"
+                className="flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-5"
             >
+              <FontAwesomeIcon
+                  icon={faGithub as IconProp}
+                  className="text-[16px] h-[1em] sm:text-[20px] md:text-[16px] lg:text-[28px] text-[#e4ded7]"
+              />
               <AnimatedTitle
                   text={"GITHUB"}
                   className={
@@ -77,7 +85,12 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/yoan-gilliand/"
                 target="_blank"
                 aria-label="View LinkedIn Profile"
+                className="flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-5"
             >
+              <FontAwesomeIcon
+                  icon={faLinkedin as IconProp}
+                  className="text-[16px] h-[1em] sm:text-[20px] md:text-[16px] lg:text-[28px] text-[#e4ded7]"
+              />
               <AnimatedTitle
                   text={"LINKEDIN"}
                   className={
