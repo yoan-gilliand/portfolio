@@ -14,7 +14,7 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 const Contact = () => {
   return (
     <motion.section
-      className="relative z-10 flex h-[95vh] w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center py-16 md:h-[80vh] md:py-20 lg:h-[90vh] lg:pt-0 lg:pb-28 3xl:h-[75vh]"
+      className="relative z-10 flex h-[85vh] w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center py-16 md:h-[75vh] md:py-20 lg:h-[75vh] lg:pt-0 lg:pb-28 3xl:h-[60vh]"
       id="contact"
       initial="initial"
       animate="animate"
