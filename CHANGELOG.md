@@ -9,7 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Dynamic fetch if the blogs on dev.to
+- More informations about dev.to posts
+
+### Changed
+
+- Skills icons
+
+## [1.1.0]
+
+### Added
+
+- Dynamic fetch of the blogs on dev.to
 
 ### Changed
 
