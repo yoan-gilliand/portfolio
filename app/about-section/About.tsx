@@ -1,12 +1,13 @@
-import { faHtml5, faCss3Alt, faJs, faJava, faPhp, faPython, faNodeJs, faVuejs, faDocker, faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SongCarousel from "./SongCarousel";
 import "../animations/animate.css";
 import AnimatedBody from "../animations/AnimatedBody";
 import AnimatedTitle from "../animations/AnimatedTitle";
-import {IconProp} from "@fortawesome/fontawesome-svg-core";
+import technologies from './technologies.json';
 
 const About = () => {
+    const generateSkillIconsUrl = (skills: string[], theme: string = 'light') => {
+        return `https://skillicons.dev/icons?i=${skills.join(',')}&theme=${theme}`;
+    };
     return (
         <section
             className="relative z-10 w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 pb-36 md:pt-20 md:pb-44 lg:pt-20 lg:pb-56"
@@ -49,7 +50,8 @@ const About = () => {
                         />
                     </div>
 
-                    <div className="mb-24 flex w-[100%] flex-col gap-4 text-center lg:text-left text-[18px] font-normal leading-relaxed tracking-wide text-[#e4ded7]/80 sm:mb-32 md:mb-40 md:gap-6 md:text-[16px] md:leading-normal lg:mt-0 lg:mb-16 lg:max-w-[30%] lg:text-[18px]">
+                    <div
+                        className="mb-24 flex w-[100%] flex-col gap-4 text-center lg:text-left text-[18px] font-normal leading-relaxed tracking-wide text-[#e4ded7]/80 sm:mb-32 md:mb-40 md:gap-6 md:text-[16px] md:leading-normal lg:mt-0 lg:mb-16 lg:max-w-[30%] lg:text-[18px]">
                         <div className="flex flex-col gap-4 md:gap-3">
                             <AnimatedTitle
                                 text={"Languages"}
@@ -59,17 +61,15 @@ const About = () => {
                                 wordSpace={"mr-[0.25em]"}
                                 charSpace={"mr-[0.01em]"}
                             />
-                            <div className="flex flex-wrap justify-center lg:justify-start gap-8">
-                                <FontAwesomeIcon icon={faHtml5 as IconProp} size="2x" color="#e4ded7" />
-                                <FontAwesomeIcon icon={faCss3Alt as IconProp} size="2x" color="#e4ded7" />
-                                <FontAwesomeIcon icon={faJs as IconProp} size="2x" color="#e4ded7" />
-                                <FontAwesomeIcon icon={faJava as IconProp} size="2x" color="#e4ded7" />
-                                <FontAwesomeIcon icon={faPhp as IconProp} size="2x" color="#e4ded7" />
-                                <FontAwesomeIcon icon={faPython as IconProp} size="2x" color="#e4ded7" />
+                            <div className="flex flex-wrap justify-center lg:justify-start gap-2">
+                                <img
+                                    src={generateSkillIconsUrl(technologies.languages)}
+                                    alt="Languages"
+                                />
                             </div>
                         </div>
                         <div className="flex flex-col gap-3">
-                            <AnimatedTitle
+                        <AnimatedTitle
                                 text={"Frameworks & Libraries"}
                                 className={
                                     "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
@@ -77,13 +77,31 @@ const About = () => {
                                 wordSpace={"mr-[0.25em]"}
                                 charSpace={"mr-[0.01em]"}
                             />
-                            <div className="flex flex-wrap justify-center lg:justify-start gap-8">
-                                <FontAwesomeIcon icon={faNodeJs as IconProp} size="2x" color="#e4ded7" />
-                                <FontAwesomeIcon icon={faVuejs as IconProp} size="2x" color="#e4ded7" />
+                            <div className="flex flex-wrap justify-center lg:justify-start gap-2">
+                                <img
+                                    src={generateSkillIconsUrl(technologies.frameworks)}
+                                    alt="Frameworks"
+                                />
                             </div>
                         </div>
                         <div className="flex flex-col gap-3">
-                            <AnimatedTitle
+                        <AnimatedTitle
+                                text={"Databases"}
+                                className={
+                                    "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
+                                }
+                                wordSpace={"mr-[0.25em]"}
+                                charSpace={"mr-[0.01em]"}
+                            />
+                            <div className="flex flex-wrap justify-center lg:justify-start gap-2">
+                                <img
+                                    src={generateSkillIconsUrl(technologies.databases)}
+                                    alt="Databases"
+                                />
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-3">
+                        <AnimatedTitle
                                 text={"Tools"}
                                 className={
                                     "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
@@ -91,16 +109,17 @@ const About = () => {
                                 wordSpace={"mr-[0.25em]"}
                                 charSpace={"mr-[0.01em]"}
                             />
-                            <div className="flex flex-wrap justify-center lg:justify-start gap-8">
-                                <FontAwesomeIcon icon={faDocker as IconProp} size="2x" color="#e4ded7" />
-                                <FontAwesomeIcon icon={faGit as IconProp} size="2x" color="#e4ded7" />
-                                <FontAwesomeIcon icon={faGithub as IconProp} size="2x" color="#e4ded7" />
+                            <div className="flex flex-wrap justify-center lg:justify-start gap-2">
+                                <img
+                                    src={generateSkillIconsUrl(technologies.tools)}
+                                    alt="Tools"
+                                />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="mt-10 flex flex-col md:-mt-0 lg:mt-28">
-                    <SongCarousel />
+                    <SongCarousel/>
                     <AnimatedBody
                         text="A few songs I can recommend if you're looking for some fresh and hard tunes :)"
                         className="absolute bottom-10 right-0 left-0 mx-auto w-[90%] text-center text-[14px] font-semibold uppercase text-[#e4ded7] sm:w-[500px] md:bottom-12 md:w-[550px] md:text-[16px] "

@@ -4,15 +4,7 @@ import BlogCard from "./BlogCard";
 import AnimatedWords2 from "../animations/AnimatedWords2";
 import { monaSans } from "../fonts/monaSans";
 import AnimatedBody from "../animations/AnimatedBody";
-
-interface BlogPost {
-    id: number;
-    title: string;
-    url: string;
-    readable_publish_date: string;
-    cover_image: string;
-    description: string;
-}
+import { BlogPost } from "./BlogPost";
 
 const Blog = () => {
     const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
@@ -53,19 +45,20 @@ const Blog = () => {
                 />
             </div>
             <div className="lg:w- [850px] grid w-[90%] max-w-[1200px] grid-cols-1 grid-rows-3 place-content-center place-items-center gap-x-6 gap-y-6 sm:grid-rows-2 sm:grid-cols-2 md:grid-cols-3 md:grid-rows-1">
-                {blogPosts.map((blog, index) => {
-                    return (
+                {loading ? (
+                    <p>Loading...</p>
+                ) : error ? (
+                    <p className="text-red-500">{error}</p>
+                ) : (
+                    blogPosts.map((blog, index) => (
                         <BlogCard
-                            key={index}
-                            title={blog.title}
-                            image={blog.cover_image}
-                            url={blog.url}
-                            date={blog.readable_publish_date}
+                            key={blog.id}
+                            {...blog}
                             available={true}
                             index={index}
                         />
-                    );
-                })}
+                    ))
+                )}
             </div>
         </section>
     );
