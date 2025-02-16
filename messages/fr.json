@@ -1,5 +1,9 @@
 {
-  "HomePage": {
-    "title": "Bonjour !"
+  "Hero": {
+    "contact": "ME CONTACTER",
+    "l_desc1" : "Étudiant en ingénierie logicielle à la",
+    "l_desc_link" : "HEIA",
+    "l_desc2" : ", actuellement indisponible pour travailler.",
+    "r_desc" : "Passionné par l'innovation et la création d'expériences numériques fluides, basé à Fribourg, Suisse."
   }
 }

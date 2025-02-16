@@ -1,5 +1,9 @@
 {
-  "HomePage": {
-    "title": "Hello !"
+  "Hero": {
+    "contact": "CONTACT ME",
+    "l_desc1" : "Software Engineering Student at",
+    "l_desc_link" : "HEIA",
+    "l_desc2" : ", currently not available for work.",
+    "r_desc" : "Driven by innovation and crafting seamless digital experiences, based in Fribourg, Switzerland."
   }
 }

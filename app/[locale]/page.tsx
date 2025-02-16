@@ -35,8 +35,6 @@ export default function Home() {
     });
   }, []);
 
-  const t = useTranslations('HomePage');
-
   return (
     <>
       <PreLoader />
@@ -45,7 +43,6 @@ export default function Home() {
 
       {/* <ScrollerMotion> */}
       <main className="flex flex-col items-center justify-center">
-        <h1>{t('title')}</h1>
         <Hero/>
         <Work/>
         {/*<Reviews/>*/}

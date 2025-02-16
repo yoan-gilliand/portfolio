@@ -8,8 +8,11 @@ import profile from "../../../public/profile.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import {useTranslations} from 'next-intl';
 
 const Hero = () => {
+  const t = useTranslations('Hero');
+
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     // first prevent the default behavior
     e.preventDefault();
@@ -45,7 +48,7 @@ const Hero = () => {
                   className="hidden rounded-md border-2 border-[#e4ded7] py-2 px-4 text-[14px] font-semibold text-[#e4ded7] sm:block  md:text-[16px] lg:block"
                   variants={bodyAnimation}
               >
-                CONTACT ME
+                {t('contact')}
               </motion.button>
             </Link>
           </div>
@@ -104,16 +107,16 @@ const Hero = () => {
                 variants={bodyAnimation}
             >
               <p className="z-50 text-center text-[16px] font-medium text-[#e4ded7] md:text-[20px] lg:text-left">
-                Software Engineering Student, at{" "}
+                {t("l_desc1")}{" "}
                 <Link
                     href="https://www.heia-fr.ch/"
                     target="_blank"
                     className="underline underline-offset-2 hover:no-underline"
                     aria-label="HEIA-FR Website"
                 >
-                  HEIA,
+                  {t("l_desc_link")}
                 </Link>{" "}
-                currently not available for work.
+                {t("l_desc2")}
               </p>
             </motion.div>
 
@@ -122,7 +125,7 @@ const Hero = () => {
                 variants={bodyAnimation}
             >
               <p className="text-right text-[16px] font-semibold text-[#e4ded7] md:text-[20px]">
-                Driven by innovation and crafting seamless digital experiences, based in Fribourg, Switzerland.
+                {t("r_desc")}
               </p>
             </motion.div>
           </div>
