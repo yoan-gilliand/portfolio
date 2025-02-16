@@ -2,8 +2,8 @@ import { reviewProps } from "./reviewDetails";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
-import "../globals.css";
-import slash from "../../public/review-slash.svg";
+import "../../globals.css";
+import slash from "../../../public/review-slash.svg";
 import { motion } from "framer-motion";
 
 const BlogCard = ({

@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { monaSans } from "../fonts/monaSans";
+import { monaSans } from "../../fonts/monaSans";
 import { motion } from "framer-motion";
-import { imageAnimation, bodyAnimation } from "../animations/animations";
-import AnimatedWords from "../animations/AnimatedWords";
-import profile from "../../public/profile.webp";
+import { imageAnimation, bodyAnimation } from "../../animations/animations";
+import AnimatedWords from "../../animations/AnimatedWords";
+import profile from "../../../public/profile.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";

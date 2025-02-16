@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import BlogCard from "./BlogCard";
-import AnimatedWords2 from "../animations/AnimatedWords2";
-import { monaSans } from "../fonts/monaSans";
-import AnimatedBody from "../animations/AnimatedBody";
+import AnimatedWords2 from "../../animations/AnimatedWords2";
+import { monaSans } from "../../fonts/monaSans";
+import AnimatedBody from "../../animations/AnimatedBody";
 import { BlogPost } from "./BlogPost";
 
 const Blog = () => {

@@ -1,12 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import { monaSans } from "../fonts/monaSans";
-import "../animations/animate.css";
-import AnimatedBody from "../animations/AnimatedBody";
-import AnimatedTitle from "../animations/AnimatedTitle";
-import AnimatedWords2 from "../animations/AnimatedWords2";
+import { monaSans } from "../../fonts/monaSans";
+import "../../animations/animate.css";
+import AnimatedBody from "../../animations/AnimatedBody";
+import AnimatedTitle from "../../animations/AnimatedTitle";
+import AnimatedWords2 from "../../animations/AnimatedWords2";
 import { motion } from "framer-motion";
-import heartIcon from "../../public/heart icon.png";
+import heartIcon from "../../../public/heart icon.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";

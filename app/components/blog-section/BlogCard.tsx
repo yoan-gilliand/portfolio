@@ -3,7 +3,7 @@ import { faArrowRight, faHeart } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import "../globals.css";
+import "../../globals.css";
 import { BlogPost } from "./BlogPost";
 
 interface BlogCardProps extends BlogPost {

@@ -1,4 +1,7 @@
 /** @type {{optimizeFonts: boolean, fontLoaders: [{loader: string, options: {weight: string[], subsets: string[]}}], images: {domains: string[]}, experimental: {appDir: boolean}}} */
+const createNextIntlPlugin = require('next-intl/plugin');
+const withNextIntl = createNextIntlPlugin();
+
 const nextConfig = {
   experimental: {
     appDir: true,
@@ -18,4 +21,4 @@ const nextConfig = {
   ],
 };
 
-module.exports = nextConfig;
+module.exports = withNextIntl(nextConfig);

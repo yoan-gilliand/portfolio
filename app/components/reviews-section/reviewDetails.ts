@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import avatar from "../../public/avatar.png";
+import avatar from "../../../public/avatar.png";
 
 export type reviewProps = {
   name: string;

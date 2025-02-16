@@ -4,8 +4,8 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { ProjectProps } from "./projectDetails";
 import Link from "next/link";
 import Image from "next/image";
-import AnimatedTitle from "../animations/AnimatedTitle";
-import AnimatedBody from "../animations/AnimatedBody";
+import AnimatedTitle from "../../animations/AnimatedTitle";
+import AnimatedBody from "../../animations/AnimatedBody";
 import { motion } from "framer-motion";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 

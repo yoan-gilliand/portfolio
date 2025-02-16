@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
-import AnimatedBody from "../animations/AnimatedBody";
+import AnimatedBody from "../../animations/AnimatedBody";
 
 const Footer = () => {
   const year = new Date().getFullYear();

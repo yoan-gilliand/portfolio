@@ -1,6 +1,6 @@
 import SongCard from "./SongCard";
 import { songs, SongProps } from "./songDetails";
-import "../animations/animate.css";
+import "../../animations/animate.css";
 
 const SongCarousel = () => {
   return (
