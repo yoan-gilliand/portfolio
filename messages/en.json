@@ -1,4 +1,10 @@
 {
+  "Navbar": {
+    "home": "Home",
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact"
+  },
   "Hero": {
     "contact": "CONTACT ME",
     "l_desc1" : "Software Engineering Student at",

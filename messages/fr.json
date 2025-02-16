@@ -1,4 +1,10 @@
 {
+  "Navbar": {
+    "home": "Accueil",
+    "work": "Travaux",
+    "about": "À propos",
+    "contact": "Contact"
+  },
   "Hero": {
     "contact": "ME CONTACTER",
     "l_desc1" : "Étudiant en ingénierie logicielle à la",
