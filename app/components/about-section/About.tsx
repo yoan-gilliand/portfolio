@@ -3,8 +3,12 @@ import "../../animations/animate.css";
 import AnimatedBody from "../../animations/AnimatedBody";
 import AnimatedTitle from "../../animations/AnimatedTitle";
 import technologies from './technologies.json';
+import {useTranslations} from "next-intl";
 
 const About = () => {
+
+    const t = useTranslations('About');
+
     const generateSkillIconsUrl = (skills: string[], theme: string = 'light') => {
         return `https://skillicons.dev/icons?i=${skills.join(',')}&theme=${theme}`;
     };
@@ -15,11 +19,9 @@ const About = () => {
         >
             <div className="mx-auto flex w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
                 <AnimatedTitle
-                    text={
-                        "I MAKE CODE EFFORTLESS, WEBSITES SEAMLESS AND EXPERIENCES IMPACTFUL."
-                    }
+                    text={t('title')}
                     className={
-                        "mb-10 text-center lg:text-left text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
+                        "mb-10 text-center lg:text-left text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px] uppercase"
                     }
                     wordSpace={"mr-[14px]"}
                     charSpace={"mr-[0.001em]"}
@@ -27,34 +29,16 @@ const About = () => {
 
                 <div className="mx-auto flex w-[100%] flex-col lg:max-w-[1200px] lg:flex-row lg:gap-20">
                     <div className="mb-10 flex w-[100%] flex-col gap-4 text-center lg:text-left text-[18px] font-medium leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16 lg:max-w-[90%] lg:text-[24px]">
-                        <AnimatedBody
-                            text={
-                                "I specialize in full-stack development, building web applications and user-centric solutions for modern businesses. I’m passionate about leveraging the power of technology to solve problems and create seamless digital experiences."
-                            }
-                        />
-                        <AnimatedBody
-                            text={
-                                "Currently, I’m a software engineering student at the Haute école d'ingénierie et d'architecture de Fribourg (HEIA-FR), gaining valuable experience in both front-end and back-end development. I'm constantly exploring new technologies, from Node.js and Vue.js to MySQL, ensuring that I stay at the forefront of industry best practices."
-                            }
-                            className={"hidden"}
-                        />
-                        <AnimatedBody
-                            text={
-                                "When I’m not coding, I love collaborating with peers in tech communities, discovering innovative solutions, and keeping up with the latest in UI/UX design. In my free time, I’m often tinkering with personal projects, enjoying time with friends, or diving into new music genres."
-                            }
-                        />
-                        <AnimatedBody
-                            text={
-                                "I’m always looking for exciting opportunities to collaborate and create meaningful applications. Feel free to reach out!"
-                            }
-                        />
+                        <AnimatedBody text={t('desc1')}/>
+                        <AnimatedBody text={t('desc2')}/>
+                        <AnimatedBody text={t('desc3')}/>
                     </div>
 
                     <div
                         className="mb-24 flex w-[100%] flex-col gap-4 text-center lg:text-left text-[18px] font-normal leading-relaxed tracking-wide text-[#e4ded7]/80 sm:mb-32 md:mb-40 md:gap-6 md:text-[16px] md:leading-normal lg:mt-0 lg:mb-16 lg:max-w-[30%] lg:text-[18px]">
                         <div className="flex flex-col gap-4 md:gap-3">
                             <AnimatedTitle
-                                text={"Languages"}
+                                text={t("skills.languages")}
                                 className={
                                     "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
                                 }
@@ -70,7 +54,7 @@ const About = () => {
                         </div>
                         <div className="flex flex-col gap-3">
                         <AnimatedTitle
-                                text={"Frameworks & Libraries"}
+                                text={t("skills.frameworks")}
                                 className={
                                     "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
                                 }
@@ -86,7 +70,7 @@ const About = () => {
                         </div>
                         <div className="flex flex-col gap-3">
                         <AnimatedTitle
-                                text={"Databases"}
+                                text={t("skills.databases")}
                                 className={
                                     "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
                                 }
@@ -102,7 +86,7 @@ const About = () => {
                         </div>
                         <div className="flex flex-col gap-3">
                         <AnimatedTitle
-                                text={"Tools"}
+                                text={t("skills.tools")}
                                 className={
                                     "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
                                 }
@@ -121,7 +105,7 @@ const About = () => {
                 <div className="mt-10 flex flex-col md:-mt-0 lg:mt-28">
                     <SongCarousel/>
                     <AnimatedBody
-                        text="A few songs I can recommend if you're looking for some fresh and hard tunes :)"
+                        text={t("carouselCaption")}
                         className="absolute bottom-10 right-0 left-0 mx-auto w-[90%] text-center text-[14px] font-semibold uppercase text-[#e4ded7] sm:w-[500px] md:bottom-12 md:w-[550px] md:text-[16px] "
                     />
                 </div>

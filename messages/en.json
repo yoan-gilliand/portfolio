@@ -25,6 +25,19 @@
       "description": "eParking is a web platform designed to modernize the management of parking permit requests for HES-SO//FR, featuring interactive forms, secure authentication, and an admin interface for efficient request handling and data management."
     }
   },
+  "About": {
+    "title": "I make code effortless, websites seamless, and experiences impactful.",
+    "desc1" : "I specialize in full-stack development, building web applications and user-centric solutions for modern businesses. Passionate about technology, I’m always looking to solve problems and create seamless digital experiences.",
+    "desc2" : "Currently, I'm a software engineering student at the Haute école d'ingénierie et d'architecture de Fribourg (HEIA-FR), gaining experience in both front-end and back-end development. I stay up-to-date with technologies like Node.js, Vue.js, and MySQL to ensure I’m applying industry best practices.",
+    "desc3" : "When I’m not coding, I enjoy collaborating with peers in tech communities, discovering innovative solutions, and keeping up with UI/UX design trends. In my free time, I work on personal projects, hang out with friends, or dive into new music genres. I’m always looking for exciting opportunities to collaborate and create meaningful applications. Feel free to reach out!",
+    "skills": {
+      "languages": "Languages",
+      "frameworks": "Frameworks & Libraries",
+      "databases": "Databases",
+      "tools": "Tools"
+    },
+    "carouselCaption" : "A few tracks I can recommend if you're looking for some fresh and heavy tunes :)"
+  },
   "Blog" : {
     "desc1" : "I write articles on",
     "desc2" : "to reinforce my knowledge and help out others who might be building something similar."
