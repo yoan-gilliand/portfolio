@@ -43,8 +43,7 @@
     "carouselCaption" : "A few tracks I can recommend if you're looking for some fresh and heavy tunes :)"
   },
   "Blog" : {
-    "desc1" : "I write articles on",
-    "desc2" : "to reinforce my knowledge and help out others who might be building something similar."
+    "description" : "I write articles to reinforce my knowledge and help out others who might be building something similar."
   },
   "Contact": {
     "title": "Let's Talk",

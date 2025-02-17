@@ -3,7 +3,7 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 type AnimatedBodyProps = {
-  text: ReactNode;
+  text: string;
   className?: string;
   wordSpace?: string;
   charSpace?: string;

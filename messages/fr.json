@@ -43,8 +43,7 @@
     "carouselCaption" : "Quelques morceaux que je recommande si tu cherches des sons puissants et énergiques :)"
   },
   "Blog" : {
-    "desc1" : "J'écris des articles sur",
-    "desc2" : "pour renforcer mes connaissances et aider ceux qui pourraient être en train de construire quelque chose de similaire."
+    "description" : "J'écris des articles pour renforcer mes connaissances et aider ceux qui pourraient être en train de construire quelque chose de similaire."
   },
   "Contact": {
     "title": "Contact",
