@@ -25,6 +25,10 @@
       "description": "eParking est une plateforme web modernisant la gestion des demandes de permis de stationnement pour la HES-SO//FR, avec formulaires interactifs, authentification sécurisée et interface d'administration efficace."
     }
   },
+  "Reviews": {
+    "title": "Témoignages",
+    "description": "Retours authentiques de clients et collaborateurs ayant expérimenté mon travail"
+  },
   "About" : {
     "title" : "Je rends le code simple, les sites web fluides et les expériences marquantes.",
     "desc1" : "Je me spécialise dans le développement full-stack, en créant des applications web et des solutions centrées sur l'utilisateur pour les entreprises modernes. Passionné par la technologie, je cherche à résoudre des problèmes et à créer des expériences numériques fluides.",
