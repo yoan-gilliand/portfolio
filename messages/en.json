@@ -11,5 +11,15 @@
     "l_desc_link" : "HEIA",
     "l_desc2" : ", currently not available for work.",
     "r_desc" : "Driven by innovation and crafting seamless digital experiences, based in Fribourg, Switzerland."
+  },
+  "Projects" : {
+    "matchRace" : {
+      "name": "MATCH RACE",
+      "description": "Match Race is a desktop application designed to streamline photo competition organization for Photo Club Fribourg, featuring automated pairing and voting, real-time audience engagement, and a user-friendly interface."
+    },
+    "eParking" : {
+      "name": "EPARKING",
+      "description": "eParking is a web platform designed to modernize the management of parking permit requests for HES-SO//FR, featuring interactive forms, secure authentication, and an admin interface for efficient request handling and data management."
+    }
   }
 }

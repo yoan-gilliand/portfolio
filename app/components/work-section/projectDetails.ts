@@ -1,7 +1,7 @@
 export type ProjectProps = {
   id: number;
-  name: string;
-  description: string;
+  name: string; // Key for the project name
+  description: string; // Key for the project description
   technologies: string[];
   github: string;
   demo: string;
@@ -9,11 +9,10 @@ export type ProjectProps = {
   available: boolean;
 };
 
-export const devProjects = [
-  {
+export const devProjects: ProjectProps[] = [  {
     id: 0,
-    name: "MATCH RACE",
-    description: "Match Race is a desktop application designed to streamline photo competition organization for Photo Club Fribourg, featuring automated pairing and voting, real-time audience engagement, and a user-friendly interface.",
+    name: "matchRace.name",
+    description: "matchRace.description",
     technologies: ["Electron.js", "Vue.js", "Vuetify"],
     github: "https://gitlab.forge.hefr.ch/ca-tic/match-race",
     demo: "https://www.linkedin.com/in/yoan-gilliand/#:~:text=Projets-,Match%20Race%20%E2%80%93%20A%20Digitalized%20Photo%20Competition%20Platform,-Match%20Race%20%E2%80%93%20A",
@@ -22,8 +21,8 @@ export const devProjects = [
   },
   {
     id: 1,
-    name: "EPARKING",
-    description: "eParking is a web platform designed to modernize the management of parking permit requests for HES-SO//FR, featuring interactive forms, secure authentication, and an admin interface for efficient request handling and data management.",
+      name: "eParking.name",
+      description: "eParking.description",
     technologies: ["Vue.js", "Express.js", "MySQL"],
     github: "https://gitlab.forge.hefr.ch/yoan.gilliand/eparking/-/tree/develop",
     demo: "https://www.linkedin.com/in/yoan-gilliand/#:~:text=Autres%20contributeurs-,eParking%20%E2%80%93%20A%20Smart%20Parking%20Permit%20Management%20Platform,-eParking%20%E2%80%93%20A%20Smart",

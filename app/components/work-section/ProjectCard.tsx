@@ -19,6 +19,7 @@ const ProjectCard = ({
                          image,
                          available,
                      }: ProjectProps) => {
+
     return (
         <motion.div
             style={
