@@ -50,5 +50,8 @@
       "subject": "Let's Work Together!",
       "body": "Hello, I think we need you to work on/collaborate this particular product... Reach out as soon as you can."
     }
+  },
+  "Footer": {
+    "madeBy": "Made with ❤\uFE0F by"
   }
 }

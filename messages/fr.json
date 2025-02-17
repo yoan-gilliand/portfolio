@@ -50,5 +50,8 @@
       "subject": "Travaillons ensemble !",
       "body": "Bonjour, je pense que nous avons besoin de vous pour travailler/collaborer sur ce produit particulier... Contactez-nous dès que possible."
     }
+  },
+  "Footer": {
+    "madeBy": "Fait avec le ❤\uFE0F par"
   }
 }
