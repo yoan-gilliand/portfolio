@@ -40,7 +40,7 @@ const BlogCard = ({
                 amount: "some",
                 once: true,
             }}
-            className="relative flex h-[480px] w-[100%] max-w-[400px] flex-col items-center justify-start rounded-2xl bg-[#212531]" // Augmentation de la hauteur pour accommoder les tags
+            className="relative flex h-[480px] w-[100%] max-w-[400px] flex-col items-center justify-start rounded-2xl bg-[#212531]"
         >
             <div className="mt-4 h-[100%] w-[90%] lg:mt-5 lg:w-[92%]">
                 <div className="h-[60%] w-full md:h-[56%]">

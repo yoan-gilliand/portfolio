@@ -21,5 +21,18 @@
       "name": "EPARKING",
       "description": "eParking est une plateforme web modernisant la gestion des demandes de permis de stationnement pour la HES-SO//FR, avec formulaires interactifs, authentification sécurisée et interface d'administration efficace."
     }
+  },
+  "Blog" : {
+    "desc1" : "J'écris des articles sur",
+    "desc2" : "pour renforcer mes connaissances et aider ceux qui pourraient être en train de construire quelque chose de similaire."
+  },
+  "Contact": {
+    "title": "Contact",
+    "description": "Une question, une proposition, un projet ou envie de collaborer sur quelque chose ?",
+    "emailText": "Envoyez-moi un email",
+    "email": {
+      "subject": "Travaillons ensemble !",
+      "body": "Bonjour, je pense que nous avons besoin de vous pour travailler/collaborer sur ce produit particulier... Contactez-nous dès que possible."
+    }
   }
 }

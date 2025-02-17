@@ -5,8 +5,13 @@ import AnimatedWords2 from "../../animations/AnimatedWords2";
 import { monaSans } from "../../fonts/monaSans";
 import AnimatedBody from "../../animations/AnimatedBody";
 import { BlogPost } from "./BlogPost";
+import {useTranslations} from 'next-intl';
+import Link from "next/link";
+
 
 const Blog = () => {
+    const t = useTranslations('Blog');
+
     const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -40,7 +45,20 @@ const Blog = () => {
                     style={`flex max-w-[500px] pr-5 flex-col items-start text-left ${monaSans.className} font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center lg:text-center text-[clamp(70px,10vw,155.04px)]`}
                 />
                 <AnimatedBody
-                    text="I write articles to reinforce my knowledge and help out others who might be building something similar."
+                    text={
+                        <>
+                            {t("desc1")}{" "}
+                            <Link
+                                href="https://dev.to/yoan-gilliand"
+                                target="_blank"
+                                className="underline underline-offset-2 hover:no-underline"
+                                aria-label="DEV.TO"
+                            >
+                                DEV.TO
+                            </Link>{" "}
+                            {t("desc2")}
+                        </>
+                    }
                     className="w-[90%] text-center text-[14px] font-semibold uppercase sm:w-[500px] md:w-[550px] md:text-[16px]"
                 />
             </div>

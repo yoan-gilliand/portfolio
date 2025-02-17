@@ -10,8 +10,10 @@ import heartIcon from "../../../public/heart icon.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import {useTranslations} from "next-intl";
 
 const Contact = () => {
+  const t = useTranslations('Contact');
   return (
     <motion.section
       className="relative z-10 flex h-[85vh] w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center py-16 md:h-[75vh] md:py-20 lg:h-[75vh] lg:pt-0 lg:pb-28 3xl:h-[60vh]"
@@ -24,7 +26,7 @@ const Contact = () => {
             className={`flex flex-col items-start justify-center ${monaSans.className} relative w-full sm:items-center lg:max-w-[1440px] `}
         >
           <AnimatedWords2
-              title={"Let's Talk"}
+              title={t('title')}
               style={
                 "flex max-w-[500px] flex-col items-start text-left text-[150px] font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center sm:text-[170px] md:text-[200px] lg:text-center lg:text-[270px] xl:text-[390px]"
               }
@@ -42,7 +44,7 @@ const Contact = () => {
               className="flex w-[350px] max-w-[90%] flex-col items-center text-center text-[14px] font-semibold uppercase text-[#e4ded7] sm:w-[350px] sm:text-[14px] md:w-[310px] md:items-start md:text-left md:text-[16px] lg:w-[420px] lg:text-[16px]">
             <AnimatedBody
                 text={
-                  "Got a question, proposal, project, or want to work together on something?"
+                  t('description')
                 }
                 className={
                   "-mb-1 inline-block overflow-hidden pt-1 sm:-mb-2 md:-mb-3 lg:-mb-4"
@@ -50,12 +52,12 @@ const Contact = () => {
             />
             <div className="mt-5 flex w-full justify-center md:justify-start">
               <Link
-                  href="mailto:yoangilliand@gmail.com?subject=Lets%20work%20together!&amp;body=Hello%2C%20I%20think%20we%20need%20you%20to%20work%20on%2Fcollaborate%20this%20particular%20product...%20Reach%20out%20as%20soon%20as%20you%20can."
+                  href={`mailto:yoangilliand@gmail.com?subject=${encodeURIComponent(t("email.subject"))}&body=${encodeURIComponent(t("email.body"))}`}
                   target="_blank"
-                  aria-label="Send me an email"
+                  aria-label={t('emailText')}
                   className="underline underline-offset-2 hover:no-underline"
               >
-                <AnimatedBody text={"Send me an email"} className={"text-center"}/>
+                <AnimatedBody text={t('emailText')} className={"text-center"}/>
               </Link>
             </div>
           </div>
