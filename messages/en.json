@@ -1,4 +1,7 @@
 {
+  "NotFound": {
+    "text" : "Wrong path ! You will be redirected to the homepage shortly..."
+  },
   "Navbar": {
     "home": "Home",
     "work": "Work",

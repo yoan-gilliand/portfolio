@@ -1,4 +1,7 @@
 {
+  "NotFound" : {
+    "text": "Page non trouvée ! Vous serez redirigé vers la page d'accueil dans un instant..."
+  },
   "Navbar": {
     "home": "Accueil",
     "work": "Travaux",

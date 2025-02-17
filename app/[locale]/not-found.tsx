@@ -2,9 +2,11 @@
 
 import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import AnimatedTitle from "../animations/AnimatedTitle";  // Use this for Next.js 13+ client-side routing
+import AnimatedTitle from "../animations/AnimatedTitle";
+import {useTranslations} from "next-intl";  // Use this for Next.js 13+ client-side routing
 
 const NotFound = () => {
+    const t = useTranslations("NotFound");
     const router = useRouter();
 
     useEffect(() => {
@@ -18,10 +20,10 @@ const NotFound = () => {
             <div>
                 <AnimatedTitle
                     text={
-                        "Wrong path ! You will be redirected to the homepage shortly..."
+                        t("text")
                     }
                     className={
-                        "text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] uppercase"
+                        "text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] uppercase text-center px-5"
                     }
                     wordSpace={"mr-[14px]"}
                     charSpace={"mr-[0.001em]"}
