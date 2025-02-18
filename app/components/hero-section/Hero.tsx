@@ -54,7 +54,7 @@ const Hero = () => {
 
           <div className="flex items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12">
             <Link
-                href="https://github.com/yoan-gilliand"
+                href={process.env.NEXT_PUBLIC_GITHUB_URL || "#"}
                 target="_blank"
                 aria-label="View GitHub Profile"
                 className="flex items-center"
@@ -62,7 +62,7 @@ const Hero = () => {
               <FontAwesomeIcon icon={faGithub as IconProp} className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 lg:h-10 lg:w-10 text-[#e4ded7]" />
             </Link>
             <Link
-                href="https://www.linkedin.com/in/yoan-gilliand/"
+                href={process.env.NEXT_PUBLIC_LINKEDIN_URL || "#"}
                 target="_blank"
                 aria-label="View LinkedIn Profile"
                 className="flex items-center"

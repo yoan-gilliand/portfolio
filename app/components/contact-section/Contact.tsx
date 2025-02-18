@@ -52,7 +52,7 @@ const Contact = () => {
             />
             <div className="mt-5 flex w-full justify-center md:justify-start">
               <Link
-                  href={`mailto:yoangilliand@gmail.com?subject=${encodeURIComponent(t("email.subject"))}&body=${encodeURIComponent(t("email.body"))}`}
+                  href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}?subject=${encodeURIComponent(t("email.subject"))}&body=${encodeURIComponent(t("email.body"))}`}
                   target="_blank"
                   aria-label={t('emailText')}
                   className="underline underline-offset-2 hover:no-underline"
@@ -65,7 +65,7 @@ const Contact = () => {
           <div
               className="flex flex-col items-center gap-10 text-[16px] font-bold text-[#e4ded7] sm:flex-row sm:gap-14 sm:text-[24px] md:gap-10 md:text-[16px] lg:gap-20 lg:text-[28px]">
             <Link
-                href="https://github.com/yoan-gilliand"
+                href={process.env.NEXT_PUBLIC_GITHUB_URL || "#"}
                 target="_blank"
                 aria-label="View GitHub Profile"
                 className="flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-5"
@@ -84,7 +84,7 @@ const Contact = () => {
               />
             </Link>
             <Link
-                href="https://www.linkedin.com/in/yoan-gilliand/"
+                href={process.env.NEXT_PUBLIC_LINKEDIN_URL || "#"}
                 target="_blank"
                 aria-label="View LinkedIn Profile"
                 className="flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-5"
