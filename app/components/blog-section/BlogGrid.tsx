@@ -20,7 +20,7 @@ const Blog = () => {
         const fetchBlogPosts = async () => {
             try {
                 const response = await axios.get(
-                    "https://dev.to/api/articles?username=yoan-gilliand&page=1&per_page=3"
+                    `${process.env.NEXT_PUBLIC_BLOG_URL}/api/articles?username=${process.env.NEXT_PUBLIC_BLOG_USERNAME}&page=1&per_page=3`
                 );
                 setBlogPosts(response.data);
             } catch (err) {
