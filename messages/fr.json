@@ -1,0 +1,64 @@
+{
+  "NotFound" : {
+    "text": "Page non trouvée ! Vous serez redirigé vers la page d'accueil dans un instant..."
+  },
+  "LocaleSwitcher": {
+    "label": "Changer de langue",
+    "locale": "{locale, select, fr {Français} en {Anglais} other {Inconnu}}"
+  },
+  "Navbar": {
+    "home": "Accueil",
+    "work": "Travaux",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "contact": "ME CONTACTER",
+    "l_desc1" : "Étudiant en ingénierie logicielle à la",
+    "l_desc_link" : "HEIA",
+    "l_desc2" : ", actuellement indisponible pour travailler.",
+    "r_desc" : "Passionné par l'innovation et la création d'expériences numériques fluides, basé à Fribourg, Suisse."
+  },
+  "Projects" : {
+    "matchRace": {
+      "name": "MATCH RACE",
+      "description": "Match Race est une application de bureau facilitant l’organisation des concours photo du Photo Club Fribourg, avec appariement et vote automatisés, interaction en temps réel et interface intuitive."
+    },
+    "eParking": {
+      "name": "EPARKING",
+      "description": "eParking est une plateforme web modernisant la gestion des demandes de permis de stationnement pour la HES-SO//FR, avec formulaires interactifs, authentification sécurisée et interface d'administration efficace."
+    }
+  },
+  "Reviews": {
+    "title": "Témoignages",
+    "description": "Retours authentiques de clients et collaborateurs ayant expérimenté mon travail"
+  },
+  "About" : {
+    "title" : "Je rends le code simple, les sites web fluides et les expériences marquantes.",
+    "desc1" : "Je me spécialise dans le développement full-stack, en créant des applications web et des solutions centrées sur l'utilisateur pour les entreprises modernes. Passionné par la technologie, je cherche à résoudre des problèmes et à créer des expériences numériques fluides.",
+    "desc2" : "Actuellement étudiant en ingénierie logicielle à la Haute école d'ingénierie et d'architecture de Fribourg (HEIA-FR), j’acquiers de l'expérience en front-end et back-end. Je me tiens à jour avec des technologies comme Node.js, Vue.js et MySQL, pour appliquer les meilleures pratiques.",
+    "desc3" : "En dehors du codage, j’aime collaborer avec des pairs, découvrir des solutions innovantes et suivre les tendances UI/UX. Dans mes moments libres, je travaille sur des projets personnels, passe du temps avec mes amis ou explore de nouveaux genres musicaux. N'hésitez pas à me contacter !",
+    "skills": {
+      "languages": "Langages",
+      "frameworks": "Frameworks",
+      "databases": "Bases de données",
+      "tools": "Outils"
+    },
+    "carouselCaption" : "Des morceaux que je recommande si vous cherchez des sons puissants :)"
+  },
+  "Blog" : {
+    "description" : "J'écris des articles pour renforcer mes connaissances et aider ceux qui pourraient être en train de construire quelque chose de similaire."
+  },
+  "Contact": {
+    "title": "Let's Talk",
+    "description": "Une question, une proposition, un projet ou envie de collaborer sur quelque chose ?",
+    "emailText": "Envoyez-moi un email",
+    "email": {
+      "subject": "Travaillons ensemble !",
+      "body": "Bonjour, je pense que nous avons besoin de vous pour travailler/collaborer sur ce produit particulier... Contactez-nous dès que possible."
+    }
+  },
+  "Footer": {
+    "madeBy": "Fait avec le ❤\uFE0F par"
+  }
+}

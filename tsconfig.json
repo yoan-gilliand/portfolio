@@ -29,7 +29,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "app/work-section/projectDetails.ts",
+    "app/components/work-section/projectDetails.ts",
     "app/animations/PreLoader/loader.js"
   ],
   "exclude": [
