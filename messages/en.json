@@ -2,6 +2,10 @@
   "NotFound": {
     "text" : "Wrong path ! You will be redirected to the homepage shortly..."
   },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, fr {French} en {English} other {Unknown}}"
+  },
   "Navbar": {
     "home": "Home",
     "work": "Work",
