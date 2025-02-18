@@ -18,7 +18,10 @@ export default function LocaleSwitcherDialog() {
     const dialogRef = useRef<HTMLDivElement>(null); // Référence pour détecter les clics en dehors
 
     const changeLocale = (nextLocale: Locale) => {
-        router.replace(pathname, { locale: nextLocale });
+        const pathSegments = window.location.pathname.split('/');
+        pathSegments[1] = nextLocale;
+        const newUrl = pathSegments.join('/');
+        window.history.replaceState({}, '', newUrl);
         setIsOpen(false);
         window.location.reload();
     };

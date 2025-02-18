@@ -6,8 +6,6 @@ import { ScrollerMotion } from "scroller-motion";
 import PreLoader from "../animations/PreLoader/PreLoader";
 import { initialBlobityOptions } from "../utils/BlobityConfig";
 import NavBar from "../components/navbar/NavBar";
-import {useTranslations} from 'next-intl';
-import {Link} from '../../i18n/routing';
 
 
 import dynamic from "next/dynamic";
@@ -18,7 +16,9 @@ const Blog = dynamic(() => import("../components/blog-section/BlogGrid"));
 const Contact = dynamic(() => import("../components/contact-section/Contact"));
 const Footer = dynamic(() => import("../components/footer/Footer"));
 
+
 export default function Home() {
+
   const blobityInstance = useBlobity(initialBlobityOptions);
 
   useEffect(() => {
