@@ -7,6 +7,7 @@ import { Locale } from "../../../i18n/routing";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faCheck } from "@fortawesome/free-solid-svg-icons";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 export default function LocaleSwitcherDialog() {
   const t = useTranslations("LocaleSwitcher");
@@ -42,16 +43,17 @@ export default function LocaleSwitcherDialog() {
 
   return (
     <div className="relative" ref={dialogRef}>
-      <button
+      <Link
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center text-[#e4ded7] transition-colors hover:text-[#c0b8af]"
+        className="flex items-center"
         aria-label={t("label")}
+        href="#"
       >
         <FontAwesomeIcon
           icon={faGlobe}
-          className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 lg:h-10 lg:w-10"
+          className="h-6 w-6 text-[#e4ded7] sm:h-7 sm:w-7 md:h-8 md:w-8 lg:h-10 lg:w-10"
         />
-      </button>
+      </Link>
 
       <AnimatePresence>
         {isOpen && (
