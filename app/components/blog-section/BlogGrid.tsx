@@ -8,8 +8,8 @@ import { useTranslations } from "next-intl";
 import { BlogPost } from "./BlogPost";
 
 const BLOG_QUERY = gql`
-  query {
-    user(username: "yoan-gilliand") {
+  query GetBlogPosts($username: String!) {
+    user(username: $username) {
       publications(first: 1) {
         edges {
           node {
@@ -77,8 +77,10 @@ const Blog = () => {
       try {
         const data = await request<GraphQLResponse>(
           "https://gql.hashnode.com",
-          BLOG_QUERY
+          BLOG_QUERY,
+          { username: process.env.NEXT_PUBLIC_BLOG_USERNAME }
         );
+
         const posts: BlogPost[] =
           data.user.publications.edges[0]?.node.posts.edges.map((edge) => ({
             id: edge.node.id,
