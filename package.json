@@ -20,6 +20,7 @@
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
     "framer-motion": "^10.6.1",
+    "graphql-request": "^7.1.2",
     "gsap": "^3.11.5",
     "next": "^15.1.6",
     "next-intl": "^3.26.3",
