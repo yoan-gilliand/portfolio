@@ -1,6 +1,0 @@
-{
-  "languages": ["css", "html", "java", "js", "php", "py"],
-  "frameworks": ["electron", "express", "nodejs", "vite", "vue", "vuetify"],
-  "databases": ["mysql", "sqlite"],
-  "tools": ["docker", "figma", "git", "githubactions", "idea", "postman" ]
-}

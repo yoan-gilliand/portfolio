@@ -1,0 +1,64 @@
+{
+  "NotFound": {
+    "text" : "Wrong path ! You will be redirected to the homepage shortly..."
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, fr {French} en {English} other {Unknown}}"
+  },
+  "Navbar": {
+    "home": "Home",
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "contact": "CONTACT ME",
+    "l_desc1" : "Software Engineering Student at",
+    "l_desc_link" : "HEIA",
+    "l_desc2" : ", currently not available for work.",
+    "r_desc" : "Driven by innovation and crafting seamless digital experiences, based in Fribourg, Switzerland."
+  },
+  "Projects" : {
+    "matchRace" : {
+      "name": "MATCH RACE",
+      "description": "Match Race is a desktop application designed to streamline photo competition organization for Photo Club Fribourg, featuring automated pairing and voting, real-time audience engagement, and a user-friendly interface."
+    },
+    "eParking" : {
+      "name": "EPARKING",
+      "description": "eParking is a web platform designed to modernize the management of parking permit requests for HES-SO//FR, featuring interactive forms, secure authentication, and an admin interface for efficient request handling and data management."
+    }
+  },
+  "Reviews": {
+    "title": "Testimonials",
+    "description": "Real Stories from Clients and Collaborators Who Have Experienced My Work Firsthand"
+  },
+  "About": {
+    "title": "I make code effortless, websites seamless, and experiences impactful.",
+    "desc1" : "I specialize in full-stack development, building web applications and user-centric solutions for modern businesses. Passionate about technology, I’m always looking to solve problems and create seamless digital experiences.",
+    "desc2" : "Currently, I'm a software engineering student at the Haute école d'ingénierie et d'architecture de Fribourg (HEIA-FR), gaining experience in both front-end and back-end development. I stay up-to-date with technologies like Node.js, Vue.js, and MySQL to ensure I’m applying industry best practices.",
+    "desc3" : "When I’m not coding, I enjoy collaborating with peers in tech communities, discovering innovative solutions, and keeping up with UI/UX design trends. In my free time, I work on personal projects, hang out with friends, or dive into new music genres. I’m always looking for exciting opportunities to collaborate and create meaningful applications. Feel free to reach out!",
+    "skills": {
+      "languages": "Languages",
+      "frameworks": "Frameworks",
+      "databases": "Databases",
+      "tools": "Tools"
+    },
+    "carouselCaption" : "A few tracks I can recommend if you're looking for some heavy tunes :)"
+  },
+  "Blog" : {
+    "description" : "I write articles to reinforce my knowledge and help out others who might be building something similar."
+  },
+  "Contact": {
+    "title": "Let's Talk",
+    "description": "Got a question, a proposal, a project, or want to work together on something?",
+    "emailText": "Send me an email",
+    "email": {
+      "subject": "Let's Work Together!",
+      "body": "Hello, I think we need you to work on/collaborate this particular product... Reach out as soon as you can."
+    }
+  },
+  "Footer": {
+    "madeBy": "Made with ❤\uFE0F by"
+  }
+}
