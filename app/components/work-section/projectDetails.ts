@@ -1,7 +1,7 @@
 export type ProjectProps = {
   id: number;
-  name: string; // Key for the project name
-  description: string; // Key for the project description
+  name: string;
+  description: string;
   technologies: string[];
   github: string;
   demo: string;
@@ -9,7 +9,8 @@ export type ProjectProps = {
   available: boolean;
 };
 
-export const devProjects: ProjectProps[] = [  {
+export const devProjects: ProjectProps[] = [
+  {
     id: 0,
     name: "matchRace.name",
     description: "matchRace.description",
@@ -21,10 +22,11 @@ export const devProjects: ProjectProps[] = [  {
   },
   {
     id: 1,
-      name: "eParking.name",
-      description: "eParking.description",
+    name: "eParking.name",
+    description: "eParking.description",
     technologies: ["Vue.js", "Express.js", "MySQL"],
-    github: "https://gitlab.forge.hefr.ch/yoan.gilliand/eparking/-/tree/develop",
+    github:
+      "https://gitlab.forge.hefr.ch/yoan.gilliand/eparking/-/tree/develop",
     demo: "https://www.linkedin.com/in/yoan-gilliand/#:~:text=Autres%20contributeurs-,eParking%20%E2%80%93%20A%20Smart%20Parking%20Permit%20Management%20Platform,-eParking%20%E2%80%93%20A%20Smart",
     image: require("../../../public/projects/eparking.png"),
     available: true,

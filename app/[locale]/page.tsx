@@ -6,8 +6,6 @@ import { ScrollerMotion } from "scroller-motion";
 import PreLoader from "../animations/PreLoader/PreLoader";
 import { initialBlobityOptions } from "../utils/BlobityConfig";
 import NavBar from "../components/navbar/NavBar";
-
-
 import dynamic from "next/dynamic";
 import Reviews from "../components/reviews-section/ReviewGrid";
 const Work = dynamic(() => import("../components/work-section/Work"));
@@ -16,9 +14,7 @@ const Blog = dynamic(() => import("../components/blog-section/BlogGrid"));
 const Contact = dynamic(() => import("../components/contact-section/Contact"));
 const Footer = dynamic(() => import("../components/footer/Footer"));
 
-
 export default function Home() {
-
   const blobityInstance = useBlobity(initialBlobityOptions);
 
   useEffect(() => {
@@ -43,13 +39,13 @@ export default function Home() {
 
       {/* <ScrollerMotion> */}
       <main className="flex flex-col items-center justify-center">
-        <Hero/>
-        <Work/>
+        <Hero />
+        <Work />
         {/*<Reviews/>*/}
-        <About/>
-        <Blog/>
-        <Contact/>
-        <Footer/>
+        <About />
+        <Blog />
+        <Contact />
+        <Footer />
       </main>
       {/* </ScrollerMotion> */}
     </>

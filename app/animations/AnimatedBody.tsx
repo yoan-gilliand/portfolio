@@ -1,4 +1,4 @@
-import {ReactNode, useEffect} from "react";
+import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -9,14 +9,7 @@ type AnimatedBodyProps = {
   charSpace?: string;
 };
 
-export default function AnimatedBody({
-  text,
-  className,
-  wordSpace,
-  charSpace,
-}: AnimatedBodyProps) {
-  //   const text = "Animated Text"; // This would normally be passed into this component as a prop!
-
+export default function AnimatedBody({ text, className }: AnimatedBodyProps) {
   const ctrls = useAnimation();
 
   const { ref, inView } = useInView({

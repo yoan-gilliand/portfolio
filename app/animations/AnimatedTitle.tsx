@@ -16,8 +16,6 @@ export default function AnimatedTitle({
   wordSpace,
   charSpace,
 }: AnimatedTitleProps) {
-  //   const text = "Animated Text"; // This would normally be passed into this component as a prop!
-
   const ctrls = useAnimation();
 
   const { ref, inView } = useInView({

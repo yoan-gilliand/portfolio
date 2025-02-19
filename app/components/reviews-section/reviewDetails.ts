@@ -34,5 +34,5 @@ export const reviewDetails = [
     profileImg: avatar,
     testimonial:
       "Outstanding professional, developed our startup's website and delivered it in a very short time and with high quality.",
-  }
+  },
 ];

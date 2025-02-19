@@ -6,6 +6,7 @@ import { monaSans } from "../../fonts/monaSans";
 import AnimatedBody from "../../animations/AnimatedBody";
 import { useTranslations } from "next-intl";
 import { BlogPost } from "./BlogPost";
+import { GraphQLResponse } from "./BlogGraphQLResponse";
 
 const BLOG_QUERY = gql`
   query GetBlogPosts($username: String!) {
@@ -38,32 +39,6 @@ const BLOG_QUERY = gql`
     }
   }
 `;
-
-interface GraphQLResponse {
-  user: {
-    publications: {
-      edges: Array<{
-        node: {
-          posts: {
-            edges: Array<{
-              node: {
-                id: string;
-                title: string;
-                url: string;
-                publishedAt: string;
-                coverImage?: { url: string };
-                brief: string;
-                readTimeInMinutes: number;
-                reactionCount: number;
-                tags: Array<{ name: string }>;
-              };
-            }>;
-          };
-        };
-      }>;
-    };
-  };
-}
 
 const Blog = () => {
   const t = useTranslations("Blog");

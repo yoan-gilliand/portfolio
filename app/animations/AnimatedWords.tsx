@@ -29,7 +29,6 @@ const AnimatedWords: React.FC<AnimatedWordsProps> = ({ title, style }) => {
     initial: {
       opacity: 0,
       y: 150,
-      // y: 100,
     },
     animate: {
       opacity: 1,
@@ -38,15 +37,6 @@ const AnimatedWords: React.FC<AnimatedWordsProps> = ({ title, style }) => {
         delay: 6,
         ease: [0.2, 0.65, 0.3, 0.9],
         duration: 1,
-      },
-    },
-  };
-
-  const staggerChildren = {
-    animate: {
-      transition: {
-        delayChildren: 0.4,
-        staggerChildren: 0.1,
       },
     },
   };
