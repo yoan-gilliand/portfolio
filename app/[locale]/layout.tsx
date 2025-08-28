@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: "",
     images: [
       {
-        url: "https://i.ibb.co/Vc1n7fdy/pp-squared.jpg",
+        url: "https://i.ibb.co/W46qzVYw/pp-squared.jpg",
         width: 1200,
         height: 630,
         alt: "Yoan Gilliand — Software Engineering Student",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
       "Software Engineering Student, at HEIA, currently not available for work. Driven by innovation and crafting seamless digital experiences, based in Fribourg, Switzerland.",
     creator: "",
     creatorId: "",
-    images: ["https://i.ibb.co/Vc1n7fdy/pp-squared.jpg"],
+    images: ["https://i.ibb.co/W46qzVYw/pp-squared.jpg"],
   },
   robots: {
     index: true,
